@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CuratingCollectionCell" id="gTV-IL-0wX" customClass="CuratingCollectionCell" customModule="madeleine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-1B-Wzk">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="260"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기자가 알려주는 세상살이 지침서 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kU9-Qo-Bi0">
+                                <rect key="frame" x="0.0" y="10" width="335" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="iLj-N1-tIi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Poq-3K-GLc">
+                                <rect key="frame" x="0.0" y="44" width="335" height="200"/>
+                                <color key="backgroundColor" name="color_pink_transparent"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Poq-3K-GLc" secondAttribute="bottom" constant="16" id="9h2-UG-Gfb"/>
+                            <constraint firstAttribute="trailing" secondItem="kU9-Qo-Bi0" secondAttribute="trailing" id="KD7-Xr-T1j"/>
+                            <constraint firstItem="kU9-Qo-Bi0" firstAttribute="top" secondItem="3hv-1B-Wzk" secondAttribute="top" constant="10" id="Mwu-om-YkW"/>
+                            <constraint firstItem="kU9-Qo-Bi0" firstAttribute="leading" secondItem="3hv-1B-Wzk" secondAttribute="leading" id="Rgf-3t-Wyy"/>
+                            <constraint firstItem="Poq-3K-GLc" firstAttribute="top" secondItem="kU9-Qo-Bi0" secondAttribute="bottom" constant="10" id="tAV-Cv-yJl"/>
+                            <constraint firstItem="Poq-3K-GLc" firstAttribute="leading" secondItem="3hv-1B-Wzk" secondAttribute="leading" id="uSE-7C-xgA"/>
+                            <constraint firstAttribute="trailing" secondItem="Poq-3K-GLc" secondAttribute="trailing" id="vnD-Sb-fCq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3hv-1B-Wzk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TsR-5k-ysR"/>
+                <constraint firstAttribute="bottom" secondItem="3hv-1B-Wzk" secondAttribute="bottom" id="YYG-lO-D0x"/>
+                <constraint firstItem="3hv-1B-Wzk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mcG-EI-bDO"/>
+                <constraint firstAttribute="trailing" secondItem="3hv-1B-Wzk" secondAttribute="trailing" id="n4U-iP-3G8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="267" height="177"/>
+            <connections>
+                <outlet property="containerView" destination="3hv-1B-Wzk" id="wEn-nN-7d5"/>
+                <outlet property="imageView" destination="Poq-3K-GLc" id="Y49-O9-u8j"/>
+                <outlet property="lbTitle" destination="kU9-Qo-Bi0" id="U6c-Th-IY3"/>
+            </connections>
+            <point key="canvasLocation" x="294.92753623188406" y="194.86607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_pink_transparent">
+            <color red="0.94999998807907104" green="0.5" blue="0.37999999523162842" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
